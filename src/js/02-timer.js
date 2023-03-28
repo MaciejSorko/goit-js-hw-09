@@ -40,6 +40,7 @@ const options = {
         startBtn.disabled = false;
         startBtn.addEventListener('click', () => {
           startBtn.disabled = true;
+          document.querySelector('input#datetime-picker').disabled = true;
           countdown = setInterval(() => {
             let date = new Date();
             dataDays.textContent = addLeadingZero(
